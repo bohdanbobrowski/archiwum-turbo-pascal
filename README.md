@@ -1,7 +1,7 @@
 Moje archwialne wypociny
 ==
 
-Cudem ocalałem pliki ze żródłami TurboPascala z moimi pierwszymi programami. Repozytorium ma charakter historyczno-sentymentalny. Poniższe programy powstały w okolicach roku 1997 na komputerze typu IBP PC 286 z bursztynowym monitorem, kartą grafiki Hercules i 20Mb HDD.
+Cudem ocalałem pliki ze żródłami TurboPascala z moimi pierwszymi programami. Repozytorium ma charakter historyczno-sentymentalny. Poniższe programy powstały w okolicach roku 1997 na komputerze typu IBM PC/AT 286 z bursztynowym monitorem, kartą grafiki Hercules i 20Mb HDD.
 
 
 15FMAKER.PAS
