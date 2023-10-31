@@ -8,7 +8,7 @@ var miesiac                  : string;
 var gubernator           : string[20];  {imie gubernatora kolonii}
 var baza : array[1..10] of string[10];
 {----------------------------------------------------------------------------}
-{dane potrzebne dla obsugi kaพdego menu}
+{dane potrzebne dla obsณugi kaฟdego menu}
 {----------------------------------------------------------------------------}
 var r1     : array[1..2] of integer;
 var r      : array[1..10] of integer;
@@ -22,8 +22,8 @@ var e      : array[1..5] of integer;
 var e1, e2 : integer;
 var poz    : array[1..100] of integer;
 {----------------------------------------------------------------------------}
-{Iloci budynkขw
-array[1..10(ilo w danej bazie)]}
+{Iloci budynk๓w
+array[1..10(iloๆ w danej bazie)]}
 {----------------------------------------------------------------------------}
 var magazyny         : array [1..12] of longint;
 var moduly_mieszkalne: array [1..12] of longint;
@@ -42,8 +42,8 @@ var stacje_d_n       : array [1..12] of longint;{}
 var szpitale         : array [1..12] of longint;{}
 var hangary          : array [1..12] of longint;{}
 {----------------------------------------------------------------------------}
-{iloci robotขw, maszyn, statkขw, pขproduktขw i materiaขw eksploatacyjnych}
-{array[1..10(ilo w danej bazie), 1..10(zaawansowanie technologii), 1.(cena).2(wydajno)}
+{iloci robot๓w, maszyn, statk๓w, p๓ณprodukt๓w i materiaณ๓w eksploatacyjnych}
+{array[1..10(iloๆ w danej bazie), 1..10(zaawansowanie technologii), 1.(cena).2(wydajnoๆ)}
 {----------------------------------------------------------------------------}
 var robot_agro       : array [1..12] of longint;
 var robot_robo       : array [1..12] of longint;
@@ -67,15 +67,15 @@ var dzialko_laserowe : array [1..12] of longint;
 {----------------------------------------------------------------------------}
 var fenix_I          : array [1..12] of longint;{niszczyciel, n. tl.-wod.}
 var fenix_II         : array [1..12] of longint;{niszczyciel, n. jon.}
-var tygrys_I         : array [1..12] of longint;{d.myl., nap. tl.-wod.}
-var tygrys_II        : array [1..12] of longint;{d.myl., nap. jonowy}
-var orzel_I          : array [1..12] of longint;{m.myliwiec, napฉd tl.-wod.}
-var orzel_II         : array [1..12] of longint;{m.myliwiec, napฉd jonowy}
-var polonez          : array [1..12] of longint;{m., n. uzbr.,nap.o-h ,statek pasaพerski}
-var polonez_bis      : array [1..12] of longint;{d., uzbr., nap. jon. ,statek pasaพerski}
-var atlas_500        : array [1..12] of longint;{may statek towarowy,nap. o-h}
-var atlas_1000       : array [1..12] of longint;{redni statek towarowy, nap. jon.}
-var atlas_2000       : array [1..12] of longint;{duพy statek towarowy, nap. jon., uzbr.}
+var tygrys_I         : array [1..12] of longint;{d.myl., nap. tl.-wod.}
+var tygrys_II        : array [1..12] of longint;{d.myl., nap. jonowy}
+var orzel_I          : array [1..12] of longint;{m.myliwiec, nap๊d tl.-wod.}
+var orzel_II         : array [1..12] of longint;{m.myliwiec, nap๊d jonowy}
+var polonez          : array [1..12] of longint;{m., n. uzbr.,nap.o-h ,statek pasaฟerski}
+var polonez_bis      : array [1..12] of longint;{d., uzbr., nap. jon. ,statek pasaฟerski}
+var atlas_500        : array [1..12] of longint;{maณy statek towarowy,nap. o-h}
+var atlas_1000       : array [1..12] of longint;{redni statek towarowy, nap. jon.}
+var atlas_2000       : array [1..12] of longint;{duฟy statek towarowy, nap. jon., uzbr.}
 {----------------------------------------------------------------------------}
 var odpadki          : array [1..12] of longint;
 var polprodukt_zywno : array [1..12] of longint;
@@ -222,45 +222,45 @@ var wyslane_eksped   : array [1..12] of longint;{}
    Window(1, 2, 27, 11);
     TextColor(0);
     TextBackground(7);
-    WriteLn(' ษออออออออออออออออออป ');
+    WriteLn(' -==================ฌ ');
     TextBackground(7);
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Nowa gra         บ');
+    Write('ฆ Nowa gra         ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Koniec gry       บ');
+    Write('ฆ Koniec gry       ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    WriteLn('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ ');
+    WriteLn('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Otworz           บ');
+    Write('ฆ Otworz           ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[4]);
-    Write('บ Zapisz           บ');
+    Write('ฆ Zapisz           ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[5]);
-    Write('บ Zapisz jako      บ');
+    Write('ฆ Zapisz jako      ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    WriteLn('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ ');
+    WriteLn('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ ');
     Write(' ');
     TextBackground(g[6]);
-    Write('บ Nastepny miesiac บ');
+    Write('ฆ Nastepny miesiac ฆ');
     TextBackground(7);
     WriteLn(' ');
-    Write(' ศออออออออออออออออออผ ');
+    Write(' L==================- ');
 
 
     Schowaj_kursor;
@@ -275,53 +275,53 @@ var wyslane_eksped   : array [1..12] of longint;{}
    Window(6, 2, 31, 12);
     TextColor(0);
     TextBackground(7);
-    WriteLn(' ษออออออออออออออออออออป ');
+    WriteLn(' -====================ฌ ');
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Moduly przemyslowe บ');
+    Write('ฆ Moduly przemyslowe ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Infrastruktura     บ');
+    Write('ฆ Infrastruktura     ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    Write('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ');
+    Write('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Flota              บ');
+    Write('ฆ Flota              ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    Write('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ');
+    Write('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[4]);
-    Write('บ Roboty i komputery บ');
+    Write('ฆ Roboty i komputery ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[5]);
-    Write('บ Silniki i maszyny  บ');
+    Write('ฆ Silniki i maszyny  ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[6]);
-    Write('บ Uzbrojenie         บ');
+    Write('ฆ Uzbrojenie         ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[7]);
-    Write('บ Inne elementy      บ');
+    Write('ฆ Inne elementy      ฆ');
     TextBackground(7);
     WriteLn(' ');
-    Write(' ศออออออออออออออออออออผ ');
+    Write(' L====================- ');
 
    Schowaj_kursor;
 
@@ -335,52 +335,52 @@ var wyslane_eksped   : array [1..12] of longint;{}
    Window(14, 2, 38, 12 );
     TextColor(0);
     TextBackground(7);
-    WriteLn(' ษออออออออออออออออออป ');
+    WriteLn(' -==================ฌ ');
     TextBackground(7);
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Farmy            บ');
+    Write('ฆ Farmy            ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Kopalnie         บ');
+    Write('ฆ Kopalnie         ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    Write('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ');
+    Write('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Fabryki paliw    บ');
+    Write('ฆ Fabryki paliw    ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[4]);
-    Write('บ Fabryki S.M      บ');
+    Write('ฆ Fabryki S.M      ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[5]);
-    Write('บ Fabryki T.B.     บ');
+    Write('ฆ Fabryki T.B.     ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[6]);
-    Write('บ Fabryki zywnosci บ');
+    Write('ฆ Fabryki zywnosci ฆ');
     TextBackground(7);
     WriteLn(' ');
-    WriteLn(' บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ ');
+    WriteLn(' ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ ');
     Write(' ');
     TextBackground(g[7]);
-    Write('บ Elektrownie      บ');
+    Write('ฆ Elektrownie      ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    Write('ศออออออออออออออออออผ ');
+    Write('L==================- ');
     Schowaj_kursor;
    End;
 {----------------------------------------------------------------------------}
@@ -392,26 +392,26 @@ var wyslane_eksped   : array [1..12] of longint;{}
    Window(28, 2, 49, 7 );
     TextColor(0);
     TextBackground(7);
-    Write(' ษอออออออออออออออออป');
+    Write(' -=================ฌ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Szkolenie       บ');
+    Write('ฆ Szkolenie       ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Pensje          บ');
+    Write('ฆ Pensje          ฆ');
     TextBackground(7);
     WriteLn(' ');
-    WriteLn(' บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ ');
+    WriteLn(' ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Transfer        บ');
+    Write('ฆ Transfer        ฆ');
     TextBackground(7);
     WriteLn(' ');
-    Write(' ศอออออออออออออออออผ ');
+    Write(' L=================- ');
 
    Schowaj_kursor;
 
@@ -427,24 +427,24 @@ var wyslane_eksped   : array [1..12] of longint;{}
    Window(36, 2, 59, 7 );
     TextColor(0);
     TextBackground(7);
-    WriteLn(' ษอออออออออออออออออออป ');
+    WriteLn(' -===================ฌ ');
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Wyslij ekspedycje บ');
+    Write('ฆ Wyslij ekspedycje ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Wyslij sonde      บ');
+    Write('ฆ Wyslij sonde      ฆ');
     TextBackground(7);
     WriteLn(' ');
-    WriteLn(' บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ ');
+    WriteLn(' ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Badania naukowe   บ');
+    Write('ฆ Badania naukowe   ฆ');
     TextBackground(7);
     WriteLn(' ');
-    Write(' ศอออออออออออออออออออผ ');
+    Write(' L===================- ');
     Schowaj_kursor;
 
    End;
@@ -457,41 +457,41 @@ var wyslane_eksped   : array [1..12] of longint;{}
    Window(43, 2, 66, 9 );
     TextColor(0);
     TextBackground(7);
-    WriteLn(' ษอออออออออออออออออออป ');
+    WriteLn(' -===================ฌ ');
     TextBackground(7);
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Kupno             บ');
+    Write('ฆ Kupno             ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Sprzedarz         บ');
+    Write('ฆ Sprzedarz         ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    Write('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ');
+    Write('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Transakcje        บ');
+    Write('ฆ Transakcje        ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    Write('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ');
+    Write('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[4]);
-    Write('บ Zaloga            บ');
+    Write('ฆ Zaloga            ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    Write('ศอออออออออออออออออออผ ');
+    Write('L===================- ');
 
 
    Schowaj_kursor;
@@ -507,38 +507,38 @@ var wyslane_eksped   : array [1..12] of longint;{}
   Window(49, 2, 73, 9);
     TextColor(0);
     TextBackground(7);
-    Write(' ษออออออออออออออออออออป');
+    Write(' -====================ฌ');
     WriteLn(' ');
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Buduj nowa baze   บ');
+    Write('ฆ Buduj nowa baze  ป ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Zburz baze        บ');
+    Write('ฆ Zburz baze       ป ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
-    Write('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ');
+    Write('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Wyslij transport  บ');
+    Write('ฆ Wyslij transport ป ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
-    Write('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ');
+    Write('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[4]);
-    Write('บ Bazy              บ');
+    Write('ฆ Bazy             ป ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
-    Write('ศออออออออออออออออออออผ ');
+    Write('L====================- ');
 
    Schowaj_kursor;
 
@@ -554,25 +554,25 @@ var wyslane_eksped   : array [1..12] of longint;{}
   Window(55, 2, 76, 6 );
     TextColor(0);
     TextBackground(7);
-    Write(' ษอออออออออออออออออป');
+    Write(' -=================ฌ');
     WriteLn(' ');
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Wojsko          บ');
+    Write('ฆ Wojsko          ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Sluzba porzadku บ');
+    Write('ฆ Sluzba porzadku ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Czerwony krzyz  บ');
+    Write('ฆ Czerwony krzyz  ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
-    Write('ศอออออออออออออออออผ ');
+    Write('L=================- ');
 
    Schowaj_kursor;
 
@@ -586,28 +586,28 @@ var wyslane_eksped   : array [1..12] of longint;{}
    Window(56, 2, 76, 7 );
     TextColor(0);
     TextBackground(7);
-    WriteLn(' ษออออออออออออออออป ');
+    WriteLn(' -================ฌ ');
     Write(' ');
     TextBackground(g[1]);
-    Write('บ Statystyka     บ');
+    Write('ฆ Statystyka     ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[2]);
-    Write('บ Raport         บ');
+    Write('ฆ Raport         ฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(7);
-    Write('บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ');
+    Write('ฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆฆ');
     TextBackground(7);
     WriteLn(' ');
     Write(' ');
     TextBackground(g[3]);
-    Write('บ Informacje     บ');
+    Write('ฆ Informacje     ฆ');
     TextBackground(7);
     WriteLn(' ');
-    Write(' ศออออออออออออออออผ ');
+    Write(' L================- ');
     Schowaj_kursor;
     End;
 {----------------------------------------------------------------------------}
@@ -679,12 +679,12 @@ var wyslane_eksped   : array [1..12] of longint;{}
   Window(3, 3, 26, 8);
   TextColor(0);
   TextBackground(7);
-  WriteLn(' ษอ[ NOWA GRA ]ออออออป ');
-  WriteLn(' บ                   บ ');
-  WriteLn(' บ  Jestes pewien ?  บ ');
-  WriteLn(' บ       (T/N)       บ ');
-  WriteLn(' บ                   บ ');
-  Write(' ศอออออออออออออออออออผ ');
+  WriteLn(' -=[ NOWA GRA ]======ฌ ');
+  WriteLn(' ฆ                   ฆ ');
+  WriteLn(' ฆ  Jestes pewien ?  ฆ ');
+  WriteLn(' ฆ       (T/N)       ฆ ');
+  WriteLn(' ฆ                   ฆ ');
+  Write(' L===================- ');
   Schowaj_kursor;
   kl[3]:=readkey;
   if kl[3]='t' then Nowa_gra;
@@ -697,12 +697,12 @@ var wyslane_eksped   : array [1..12] of longint;{}
   Window(3, 3, 26, 8);
   TextColor(0);
   TextBackground(7);
-  WriteLn(' ษอ[ KONIEC GRY ]ออออป ');
-  WriteLn(' บ                   บ ');
-  WriteLn(' บ  Jestes pewien ?  บ ');
-  WriteLn(' บ       (T/N)       บ ');
-  WriteLn(' บ                   บ ');
-  Write(' ศอออออออออออออออออออผ ');
+  WriteLn(' -=[ KONIEC GRY ]====ฌ ');
+  WriteLn(' ฆ                   ฆ ');
+  WriteLn(' ฆ  Jestes pewien ?  ฆ ');
+  WriteLn(' ฆ       (T/N)       ฆ ');
+  WriteLn(' ฆ                   ฆ ');
+  Write(' L===================- ');
   Schowaj_kursor;
   kl[3]:=readkey;
   if kl[3]='t' then klaw_koncowe;
@@ -989,28 +989,28 @@ var wyslane_eksped   : array [1..12] of longint;{}
    TextColor(0);
    TextBackGround(7);
    ClrScr;
-   Write(' ษอ[ BUDOWA MODULOW PRZEMYSLOWYCH ]อออออออออออออออออออออออออออออออออออออออออป ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ');
+   Write(' -=[ BUDOWA MODULOW PRZEMYSLOWYCH ]=========================================ฌ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' L==========================================================================-');
    Window(4,4,75,21);
    TextColor(0);
    TextBackGround(7);
@@ -1044,28 +1044,28 @@ var wyslane_eksped   : array [1..12] of longint;{}
    TextColor(0);
    TextBackGround(7);
    ClrScr;
-   Write(' ษอ[ BUDOWA INFRASTRUKTURY BAZY ]อออออออออออออออออออออออออออออออออออออออออออป ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ');
+   Write(' -=[ BUDOWA INFRASTRUKTURY BAZY ]===========================================ฌ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' L==========================================================================-');
    Window(4,4,75,21);
    TextColor(0);
    TextBackGround(7);
@@ -1083,28 +1083,28 @@ var wyslane_eksped   : array [1..12] of longint;{}
    TextColor(0);
    TextBackGround(7);
    ClrScr;
-   Write(' ษอ[ BUDOWA FLOTY ]อออออออออออออออออออออออออออออออออออออออออออออออออออออออออป ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ');
+   Write(' -=[ BUDOWA FLOTY ]=========================================================ฌ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' L==========================================================================-');
    Window(4,4,75,21);
    TextColor(0);
    TextBackGround(7);
@@ -1122,28 +1122,28 @@ End;
    TextColor(0);
    TextBackGround(7);
    ClrScr;
-   Write(' ษอ[ BUDOWA ROBOTOW I KOMPUTEROW ]ออออออออออออออออออออออออออออออออออออออออออป ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ');
+   Write(' -=[ BUDOWA ROBOTOW I KOMPUTEROW ]==========================================ฌ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' L==========================================================================-');
    Window(4,4,75,21);
    TextColor(0);
    TextBackGround(7);
@@ -1161,28 +1161,28 @@ End;
    TextColor(0);
    TextBackGround(7);
    ClrScr;
-   Write(' ษอ[ BUDOWA SILNIKOW I MASZYN ]อออออออออออออออออออออออออออออออออออออออออออออป ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ');
+   Write(' -=[ BUDOWA SILNIKOW I MASZYN ]=============================================ฌ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' L==========================================================================-');
    Window(4,4,75,21);
    TextColor(0);
    TextBackGround(7);
@@ -1200,28 +1200,28 @@ End;
    TextColor(0);
    TextBackGround(7);
    ClrScr;
-   Write(' ษอ[ BUDOWA UZBROJENIA ]ออออออออออออออออออออออออออออออออออออออออออออออออออออป ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ');
+   Write(' -=[ BUDOWA UZBROJENIA ]====================================================ฌ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' L==========================================================================-');
    Window(4,4,75,21);
    TextColor(0);
    TextBackGround(7);
@@ -1239,28 +1239,28 @@ End;
    TextColor(0);
    TextBackGround(7);
    ClrScr;
-   Write(' ษอ[ BUDOWA INNYCH ELEMENTOW ]ออออออออออออออออออออออออออออออออออออออออออออออป ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' บ                                                                          บ ');
-   Write(' ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ');
+   Write(' -=[ BUDOWA INNYCH ELEMENTOW ]==============================================ฌ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' ฆ                                                                          ฆ ');
+   Write(' L==========================================================================-');
    Window(4,4,75,21);
    TextColor(0);
    TextBackGround(7);
@@ -1413,22 +1413,22 @@ End;
   TextColor(0);
   TextBackground(7);
   ClrScr;
-  Write(' ษอ[ INFORMACJE ]ออออออออออออออออออออออออออออออออออออออออออออป ');
-  Write(' บ             GLOBTROTER v.1.0  - WERSJA TESTOWA            บ ');
-  Write(' บ                                                           บ ');
-  Write(' บ Jest to testowa wersja gry ekonomicznej GLOBTROTER. Wsze- บ ');
-  Write(' บ lkie  uwagi  dotyczace dzialania programu prosze kierowac บ ');
-  Write(' บ po adres:                                                 บ ');
-  Write(' บ                     BOHDAN BOBROWSKI                      บ ');
-  Write(' บ                     Gdansk- Wrzeszcz                      บ ');
-  Write(' บ                     ul. Matejki 23 A                      บ ');
-  Write(' บ                                                           บ ');
-  Write(' บ Program  nalezy do kategorii FREEWARE, czyli mozna rozpo- บ ');
-  Write(' บ wszechniac w oryginalnym stanie (!) w dowolnych ilosciach บ ');
-  Write(' บ wszedzie na Swiecie. Istnieje mozliwosc uzyskania kodu... บ ');
-  Write(' บ ...ale o tym, i o wielu innych rzeczach dowiesz sie prze- บ ');
-  Write(' บ gladajac plik czytajto.txt....                            บ ');
-  Write(' ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ');
+  Write(' -=[ INFORMACJE ]============================================ฌ ');
+  Write(' ฆ             GLOBTROTER v.1.0  - WERSJA TESTOWA            ฆ ');
+  Write(' ฆ                                                           ฆ ');
+  Write(' ฆ Jest to testowa wersja gry ekonomicznej GLOBTROTER. Wsze- ฆ ');
+  Write(' ฆ lkie  uwagi  dotyczace dzialania programu prosze kierowac ฆ ');
+  Write(' ฆ po adres:                                                 ฆ ');
+  Write(' ฆ                     BOHDAN BOBROWSKI                      ฆ ');
+  Write(' ฆ                     Gdansk- Wrzeszcz                      ฆ ');
+  Write(' ฆ                     ul. Matejki 23 A                      ฆ ');
+  Write(' ฆ                                                           ฆ ');
+  Write(' ฆ Program  nalezy do kategorii FREEWARE, czyli mozna rozpo- ฆ ');
+  Write(' ฆ wszechniac w oryginalnym stanie (!) w dowolnych ilosciach ฆ ');
+  Write(' ฆ wszedzie na Swiecie. Istnieje mozliwosc uzyskania kodu... ฆ ');
+  Write(' ฆ ...ale o tym, i o wielu innych rzeczach dowiesz sie prze- ฆ ');
+  Write(' ฆ gladajac plik czytajto.txt....                            ฆ ');
+  Write(' L===========================================================-');
   Schowaj_kursor;
   Readkey;
   Main_Menu;
@@ -1529,7 +1529,7 @@ End;
 {----------------------------------------------------------------------------}
 {----------------------------------------------------------------------------}
 {----------------------------------------------------------------------------}
-{--...SYTUACJA-PO-NACI—NIจCIU-ENTER------------------------------------------}
+{--...SYTUACJA-PO-NACINIสCIU-ENTER------------------------------------------}
 {----------------------------------------------------------------------------}
   procedure pod_menu_wybor;
    Begin
@@ -1546,7 +1546,7 @@ End;
 
 {----------------------------------------------------------------------------}
 {----------------------------------------------------------------------------}
-{--OBSUGA-MENU--------------------------------------------------------------}
+{--OBSฃUGA-MENU--------------------------------------------------------------}
 {----------------------------------------------------------------------------}
   procedure menu_wybor;
    Begin
@@ -1579,7 +1579,7 @@ End;
 {---------------------------------------------------------------------------------------------}
 {----------------------------------------------------------------------------}
 {----------------------------------------------------------------------------}
-{--TU-ZACZYNA-SIจ-WA—CIWY-PROGRAM-------------------------------------------}
+{--TU-ZACZYNA-SIส-WฃACIWY-PROGRAM-------------------------------------------}
 {----------------------------------------------------------------------------}
 BEGIN
  klawisze;
